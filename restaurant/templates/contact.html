@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Menu{% endblock %}
+
+{% block link %}
+    <link rel="stylesheet" href="{% static 'css/style_contact.css' %}">
+{% endblock %}
+
+{% block content %}
+    <section class="contact-wp">
+        <div class="contact-title text-center">
+            <h2 class="contact-title-txt">Entre em Contacto Connosco</h2>
+        </div>
+        <div class="container">
+            <div class="row info-wp">
+                <div class="contact-info">
+                    <div class="row align-items-center">
+                        <div class="col-lg-4">
+                            <div class="conti-title text-center">
+                                <h3>Morada</h3>
+                                <p>Rua do Cantinho dos Anjos, 666</p>
+                                <p>9500-000 Ponta Delgada</p>
+                                <p>São Miguel, Açores</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="call-now text-center">
+                                <i class="uil uil-phone"></i>
+                                <a href="tel:+351296123456">(+351) 296 123 456</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="conti-title text-center">
+                                <h3 class="conti-mail-txt">E-mail</h3>
+                                <a class="conti-mail-link" href="mailto:street@epvfc.com.pt">street@epvfc.com.pt</a>
+                                <p class="fake-space">.</p>
+                                <p class="fake-space">.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="contact-form">
+                <div class="col-lg-12 form-wp">
+                    <form action="" method="POST">
+                        {% csrf_token %}
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome"><br>
+                        <label for="telefone">Telefone</label>
+                        <input type="text" id="telefone" name="telefone"><br>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email"><br>
+                        <label for="mensagem">Mensagem</label>
+                        <textarea name="mensagem" id="mensagem" rows="10" cols="22"></textarea><br>
+                        <button class="sec-btn-cnt" type="submit">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

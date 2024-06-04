@@ -1,0 +1,17 @@
+.shape img {
+    padding-top: 130px;
+    position: absolute;
+    top: -10px;
+    right: 73%;
+    width: 540px;
+}
+
+.shape.shape-two img {
+    left: 70%;
+    transform: scale(-1, 1);
+}
+
+.about-wp {
+    padding-top: 184px;
+    padding-bottom: 70px;
+}

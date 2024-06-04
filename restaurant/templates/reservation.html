@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Reserva{% endblock %}
+
+{% block link %}
+    <link rel="stylesheet" href="{% static 'css/style_reservation.css' %}">
+{% endblock %}
+
+{% block content %}
+    <section class="reservation-wp">
+        <div class="reservation-title text-center">
+            <h2>Faça Já a Sua Reserva</h2>
+        </div>
+        <div class="container wp">
+            <div class="form-wp">
+                <form method="post">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <div class="btn-wp">
+                        <button class="sec-btn-res" type="submit">Reservar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+{% endblock %}

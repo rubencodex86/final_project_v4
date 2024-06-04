@@ -1,0 +1,191 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Home{% endblock %}
+
+{% block link %}
+    <link rel="stylesheet" href="{% static 'css/style_home.css' %}">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Link FancyBox CSS -->
+    <link rel="stylesheet" href="{% static 'css/jquery.fancybox.min.css' %}">
+{% endblock %}
+
+{% block content %}
+    <div class="js-mousemove-content">
+        <section class="main-banner">
+            <img src="{% static 'images/pizza.png' %}"  data-depth="0.30" data-speed="5" class="layer img-one" alt="">
+            <img src="{% static 'images/kebab.png' %}" data-depth="0.25" data-speed="3" class="layer img-two" alt="">
+            <div class="container">
+                <div class="row main-row">
+                    <div class="col-lg-6">
+                        <div class="banner-txt">
+                            <h2 class="main-title">Street <span>Food</span> Restaurant</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad aliquid aperiam
+                                asperiores atque cumque deserunt ducimus est magni nemo nesciunt numquam officia quia
+                                quisquam suscipit voluptates, voluptatum! Culpa, voluptatibus.</p>
+                            <div class="banner-btn">
+                                <a href="{% url 'menu' %}" class="sec-btn">Ver Menu</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="banner-img-wp">
+                            <div class="banner-img">
+                                <img src="{% static 'images/front-view-burger-with-french-fries.jpg' %}" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- gallery images coverflow-->
+        <section class="gallery">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="gallery-title">
+                            <h2>Os nossos pratos</h2>
+                            <div class="gallery-shape">
+                                <img src="{% static 'images/title-shape.svg' %}" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="background">
+            <div class="row" id="gallery-slide">
+                <div class="col-lg-10 m-auto">
+                    <div class="book-table-img-slider" id="icon">
+                        <div class="swiper-wrapper">
+
+                            <!--<a href="{% static 'images/gallery/plate_hamburger_01.jpg' %}" data-fancybox="table-slider"
+                                class="book-table-img back-img swiper-slide one"></a>-->
+                            <a href="{% static 'images/gallery/plate_hamburger_01.jpg' %}" class="book-table-img
+                             back-img swiper-slide one"></a>
+
+                            <!--<a href="{% static 'images/gallery/plate_hamburger_02.jpg' %}" data-fancybox="table-slider"
+                                class="book-table-img back-img swiper-slide two"></a>-->
+                            <a href="{% static 'images/gallery/plate_hamburger_02.jpg' %}" class="book-table-img
+                             back-img swiper-slide two"></a>
+
+                            <!--<a href="{% static 'images/gallery/plate_hamburger_03.jpg' %}" data-fancybox="table-slider"
+                                class="book-table-img back-img swiper-slide three"></a>-->
+                            <a href="{% static 'images/gallery/plate_hamburger_03.jpg' %}" class="book-table-img
+                             back-img swiper-slide three"></a>
+
+                            <!--<a href="{% static 'images/gallery/plate_kebab_01.jpg' %}" data-fancybox="table-slider"
+                                class="book-table-img back-img swiper-slide four"></a>-->
+                            <a href="{% static 'images/gallery/plate_kebab_01.jpg' %}" class="book-table-img
+                             back-img swiper-slide four"></a>
+
+                            <!--<a href="{% static 'images/gallery/plate_kebab_02.jpg' %}" data-fancybox="table-slider"
+                                class="book-table-img back-img swiper-slide five"></a>-->
+                            <a href="{% static 'images/gallery/plate_kebab_02.jpg' %}" class="book-table-img
+                             back-img swiper-slide five"></a>
+
+                            <!--<a href="{% static 'images/gallery/plate_kebab_03.jpg' %}" data-fancybox="table-slider"
+                                class="book-table-img back-img swiper-slide six"></a>-->
+                            <a href="{% static 'images/gallery/plate_kebab_03.jpg' %}" class="book-table-img
+                             back-img swiper-slide six"></a>
+
+                            <!--<a href="{% static 'images/gallery/plate_pizza_01.jpg' %}" data-fancybox="table-slider"
+                                class="book-table-img back-img swiper-slide seven"></a>-->
+                            <a href="{% static 'images/gallery/plate_pizza_01.jpg' %}" class="book-table-img
+                             back-img swiper-slide seven"></a>
+
+                            <!--<a href="{% static 'images/gallery/plate_pizza_02.jpg' %}" data-fancybox="table-slider"
+                                class="book-table-img back-img swiper-slide eight"></a>-->
+                            <a href="{% static 'images/gallery/plate_pizza_02.jpg' %}" class="book-table-img
+                             back-img swiper-slide eight"></a>
+
+                            <!--<a href="{% static 'images/gallery/plate_pizza_03.jpg' %}" data-fancybox="table-slider"
+                                class="book-table-img back-img swiper-slide nine"></a>-->
+                            <a href="{% static 'images/gallery/plate_pizza_03.jpg' %}" class="book-table-img
+                             back-img swiper-slide nine"></a>
+                        </div>
+                        <!-- swipper bar and buttons-->
+                        <div class="swiper-button-wp">
+                            <div class="swiper-button-prev swiper-button">
+                                <i class="uil uil-angle-left"></i>
+                            </div>
+                            <div class="swiper-button-next swiper-button">
+                                <i class="uil uil-angle-right"></i>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end gallery -->
+
+        <!-- highlight -->
+        <section class="highlight">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-5">
+                        <div class="hl-img mt-5">
+                            <img src="{% static 'images/hl-pizza.png' %}" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="hl-txt">
+                            <h2 class="hl-title">Caprese Gourmet</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad alias, animi
+                                assumenda, autem beatae cupiditate debitis dolore eaque enim exercitationem fuga
+                                impedit modi quibusdam reiciendis repellat, reprehenderit sed totam? Fuga. Ab cumque
+                                distinctio ducimus fuga maxime minima non nulla, quae quod suscipit? Ad adipisci
+                                aspernatur consectetur corporis deserunt distinctio enim harum, illum.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam atque cum delectus
+                                dolorem eaque error esse, facilis, ipsum molestiae neque nesciunt nihil, nostrum nulla
+                                porro quo quod reiciendis saepe suscipit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end highlight -->
+
+        <!-- newletter -->
+        <section class="newsletter-sec section pt-0">
+            <div class="sec-wp">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 m-auto">
+                            <div class="newsletter-box text-center back-img white-text">
+                                <div class="bg-overlay dark-overlay"></div>
+                                <div class="sec-wp">
+                                    <div class="newsletter-box-text">
+                                        <h2 class="h2-title">Subscreva a Nossa Newsletter</h2>
+                                        <p>This is Lorem ipsum dolor sit amet consectetur adipisicing elit ad
+                                            veritatis.</p>
+                                    </div>
+                                    <form action="" method="POST" class="newsletter-form">
+                                        {% csrf_token %}
+                                        <input type="email" name="email" class="form-input"
+                                            placeholder="Introduza o seu e-mail" required>
+                                        <button type="submit" class="sec-btn primary-btn">Submit</button>
+                                    </form>
+                                    {% if errors.email %}
+                                        <p style="color:red;">{{ errors.email }}</p>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of newsletter -->
+    </div>
+{% endblock %}
+
+{% block scripts %}
+    <script src="{% static 'js/parallax_main_effect.js' %}"></script>
+{#    <script src="{% static 'js/jquery.fancybox.min.js' %}"></script>#}
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="{% static 'js/gallery.js' %}"></script>
+{% endblock %}

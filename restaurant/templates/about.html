@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Sobre{% endblock %}
+
+{% block link %}
+    <link rel="stylesheet" href="{% static 'css/style_about.css' %}">
+{% endblock %}
+
+{% block content %}
+    <section class="about-wp">
+{#        <div class="bg-light">#}
+        <div class="shape">
+            <img src="{% static 'images/table-leaves-shape.png' %}" alt="">
+        </div>
+        <div class="shape shape-two">
+            <img src="{% static 'images/table-leaves-shape.png' %}" alt="">
+        </div>
+
+        <div class="sec-wp">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="sec-title text-center mb-5">
+                            <h2 class="h2-title">Descobre Um Pouco da Nossa História</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-info">
+                    <div class="row align-items-center">
+                        <div class="col-lg-12">
+                            <div class="about-text text-center">
+                                <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda
+                                    consequatur, doloremque id nam quas quasi sapiente temporibus. Minus nobis,
+                                    recusandae. Ex molestias officiis qui quos temporibus unde vel? Reiciendis,
+                                    totam?</span><span>Ad aliquid aperiam architecto aspernatur autem culpa
+                                    dignissimos, doloremque ea, error est eum eveniet iste laborum maxime mollitia
+                                    nesciunt nisi nulla officia possimus quas reprehenderit, tempore ullam ut velit
+                                    veniam?</span><span>A ad aspernatur assumenda atque debitis eius et explicabo
+                                    harum illum impedit ipsa iste laboriosam laudantium maxime, nesciunt nihil
+                                    nobis numquam obcaecati quae quia ratione rerum, saepe sed sint, sit.</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+{#        </div>#}
+    </section>
+{% endblock %}
+

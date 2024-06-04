@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Obrigado!{% endblock %}
+
+{% block link %}
+    <link rel="stylesheet" href="{% static 'css/style_reservation.css' %}">
+{% endblock %}
+
+{% block content %}
+    <section class="reservation-wp">
+        <div class="container wp text-center">
+            <h1>Sucesso!</h1>
+            <p>A sua reserva foi bem sucedida!</p>
+            <p>Até breve :)</p>
+        </div>
+    </section>
+{% endblock %}

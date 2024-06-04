@@ -1,0 +1,100 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Menu{% endblock %}
+
+{% block link %}
+    <link rel="stylesheet" href="{% static 'css/style_menu.css' %}">
+{% endblock %}
+
+{% block content %}
+
+    <section class="menu-wp">
+        <div class="menu-title">
+            <h2 class="menu-title-txt">As Nossas Iguarias</h2>
+        </div>
+        <div class="tab-nav">
+            <button class="tab-link active" onclick="openTab(event, 'Pizza')">Pizzas</button>
+            <button class="tab-link" onclick="openTab(event, 'Burgers')">Hamburgers</button>
+            <button class="tab-link" onclick="openTab(event, 'Kebabs')">Kebabs</button>
+        </div>
+        <div class="container">
+            <div class="row  align-items-center">
+                <div id="Pizza" class="tab-content col-lg-12">
+                    <div class="card">
+                        <img class="card-img" src="{% static 'images/gallery/plate_pizza_01.jpg' %}" alt="">
+                        <h4 class="card-title">Flor de Itália</h4>
+                        <p class="card-txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aperiam aut consequatur
+                        eaque eos id itaque molestias officiis perferendis repellat. Cum perspiciatis, repellendus! At,
+                        atque fugit illum quasi suscipit tenetur?</p>
+                    </div>
+                    <div class="card offset-1">
+                        <img class="card-img" src="{% static 'images/gallery/plate_pizza_02.jpg' %}" alt="">
+                        <h4 class="card-title">Margarita</h4>
+                        <p class="card-txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aperiam aut consequatur
+                        eaque eos id itaque molestias officiis perferendis repellat. Cum perspiciatis, repellendus! At,
+                        atque fugit illum quasi suscipit tenetur?</p>
+                    </div>
+                    <div class="card offset-1">
+                        <img class="card-img" src="{% static 'images/gallery/plate_pizza_03.jpg' %}" alt="">
+                        <h4 class="card-title">Meat Lovers</h4>
+                        <p class="card-txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aperiam aut consequatur
+                        eaque eos id itaque molestias officiis perferendis repellat. Cum perspiciatis, repellendus! At,
+                        atque fugit illum quasi suscipit tenetur?</p>
+                    </div>
+                </div>
+                <div id="Burgers" class="tab-content col-lg-12">
+                    <div class="card">
+                        <img class="card-img" src="{% static 'images/gallery/plate_hamburger_01.jpg' %}" alt="">
+                        <h4 class="card-title">Conquistador</h4>
+                        <p class="card-txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aperiam aut consequatur
+                        eaque eos id itaque molestias officiis perferendis repellat. Cum perspiciatis, repellendus! At,
+                        atque fugit illum quasi suscipit tenetur?</p>
+                    </div>
+                    <div class="card offset-1">
+                        <img class="card-img" src="{% static 'images/gallery/plate_hamburger_02.jpg' %}" alt="">
+                        <h4 class="card-title">Chiquititi</h4>
+                        <p class="card-txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aperiam aut consequatur
+                        eaque eos id itaque molestias officiis perferendis repellat. Cum perspiciatis, repellendus! At,
+                        atque fugit illum quasi suscipit tenetur?</p>
+                    </div>
+                    <div class="card offset-1">
+                        <img class="card-img" src="{% static 'images/gallery/plate_hamburger_03.jpg' %}" alt="">
+                        <h4 class="card-title">Imperador</h4>
+                        <p class="card-txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aperiam aut consequatur
+                        eaque eos id itaque molestias officiis perferendis repellat. Cum perspiciatis, repellendus! At,
+                        atque fugit illum quasi suscipit tenetur?</p>
+                    </div>
+                </div>
+                <div id="Kebabs" class="tab-content col-lg-12">
+                    <div class="card">
+                        <img class="card-img" src="{% static 'images/gallery/plate_kebab_01.jpg' %}" alt="">
+                        <h4 class="card-title">Pancake Shoarma</h4>
+                        <p class="card-txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aperiam aut consequatur
+                        eaque eos id itaque molestias officiis perferendis repellat. Cum perspiciatis, repellendus! At,
+                        atque fugit illum quasi suscipit tenetur?</p>
+                    </div>
+                    <div class="card offset-1">
+                        <img class="card-img" src="{% static 'images/gallery/plate_kebab_02.jpg' %}" alt="">
+                        <h4 class="card-title">Pulled Kebab</h4>
+                        <p class="card-txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aperiam aut consequatur
+                        eaque eos id itaque molestias officiis perferendis repellat. Cum perspiciatis, repellendus! At,
+                        atque fugit illum quasi suscipit tenetur?</p>
+                    </div>
+                    <div class="card offset-1">
+                        <img class="card-img" src="{% static 'images/gallery/plate_kebab_03.jpg' %}" alt="">
+                        <h4 class="card-title">Wrap Shoarma</h4>
+                        <p class="card-txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aperiam aut consequatur
+                        eaque eos id itaque molestias officiis perferendis repellat. Cum perspiciatis, repellendus! At,
+                        atque fugit illum quasi suscipit tenetur?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}
+
+{% block scripts %}
+    <script src="{% static 'js/script_hero_Cards.js' %}"></script>
+{% endblock %}

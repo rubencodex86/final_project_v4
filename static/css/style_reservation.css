@@ -1,0 +1,57 @@
+.reservation-wp {
+    padding-top: 200px;
+    /*padding-bottom: 100px;*/
+}
+
+.reservation-title {
+    padding-bottom: 60px;
+}
+
+.form-wp {
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+    /*background-color: #ff8243;*/
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 2px 2px 14px #b2b2b3, -2px -2px 14px #0d0d25;
+}
+
+.btn-wp {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.sec-btn-res {
+    min-width: 120px;
+    min-height: 58px;
+    background: #ff8243;
+    box-shadow: 2px 2px 4px #b2b2b3, -2px -2px 4px #ffffff;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    color: #0d0d25;
+    text-transform: capitalize;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    outline: none !important;
+    transition: 0.8s cubic-bezier(0.22, 0.78, 0.45, 1.02);
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+    padding: 6px 30px;
+}
+
+.sec-btn-res:hover {
+    border-color: #0d0d25;
+    box-shadow: inset 9px 9px 12px #f5661d, inset -9px -9px 12px #ff8243;
+    color: #0d0d25;
+}
+
+.wp {
+    padding-bottom: 100px;
+}
+
+

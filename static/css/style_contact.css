@@ -1,0 +1,104 @@
+.contact-wp {
+    padding-top: 200px;
+    padding-bottom: 100px;
+}
+
+.contact-title {
+    margin-bottom: 100px;
+}
+
+
+.call-now {
+    border-left: 3px dotted rgb(13 13 37 /50%);
+    border-right: 3px dotted rgb(13 13 37 /50%);
+    padding: 15px 0;
+}
+
+.call-now i {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 26px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    background: #f3f3f5;
+    box-shadow: 9px 9px 12px #b2b2b3, -9px -9px 12px #ffffff;
+    color: #ff8243;
+}
+
+.call-now a {
+    font-size: 32px;
+    font-weight: 500;
+    color: #0d0d25;
+    transition: 0.8s cubic-bezier(0.22, 0.78, 0.45, 1.02);
+}
+
+.call-now a:hover, .contact-info a:hover {
+    color: #fcbc30;
+}
+
+.conti-mail-txt {
+    padding-bottom: 30px;
+}
+
+.conti-mail-link {
+    font-size: 20px;
+}
+
+.fake-space {
+    color: #F3F3F5;
+}
+
+.info-wp {
+    padding-bottom: 66px;
+}
+
+.form-wp {
+    width: 100%;
+    max-width: 40%;
+    background: linear-gradient(145deg, #e26a2c, #ff8243);
+    padding: 66px;
+    border-radius: 40px;
+    margin: 0 auto;
+    box-shadow: 3px 3px 9px #b2b2b3, -3px -3px 9px #ffffff;
+}
+
+form {
+    /*width: 100%;*/
+    display: flex;
+    flex-direction: column;
+/*    max-width: 33%;*/
+/*    margin: 0 auto;*/
+/*    !*align-items: center;*!*/
+}
+
+.sec-btn-cnt {
+    min-width: 120px;
+    min-height: 58px;
+    background: #f3f3f5;
+    box-shadow: 2px 2px 4px #b2b2b3, -2px -2px 4px #ffffff;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    color: #0d0d25;
+    text-transform: capitalize;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    outline: none !important;
+    transition: 0.8s cubic-bezier(0.22, 0.78, 0.45, 1.02);
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+    padding: 6px 30px;
+}
+
+.sec-btn-cnt:hover {
+    border-color: #0d0d25;
+    box-shadow: inset 9px 9px 12px #cccccc, inset -9px -9px 12px #ffffff;
+    color: #0d0d25;
+}
